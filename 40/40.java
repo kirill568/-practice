@@ -23,6 +23,12 @@ class App {
 			}
 		}
 
-		System.out.println(hashMap.entrySet());
+		
+		for (Map.Entry<String, Integer> pair: hashMap.entrySet())
+    	{
+        	if (pair.getValue() > 1) {
+        		System.out.println(pair.getKey() + " " + pair.getValue());
+        	}
+    	}
 	}
 }

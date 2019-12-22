@@ -6,7 +6,7 @@ class App {
 	}
 
 	public static int[] changeArray(int[] array) {
-		for (int i = 0; i < 6; i+=1) {
+		for (int i = 2; i < 6; i+=1) {
 			array[i] = 0;
 		}
 		return array;

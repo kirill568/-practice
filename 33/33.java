@@ -48,18 +48,31 @@ class MyStack {
 class App {
 	public static void main(String[] args) {
 		MyStack stack = new MyStack(4);
-
-		stack.push("kirill");
-		stack.push("nikita");
-		stack.push("zheka");
+		try {
+			stack.push("kirill");
+			stack.push("nikita");
+			stack.push("olga");
+			stack.push("oleg");
+			stack.push("sveta");
+		} catch(IndexOutOfBoundsException exc) {
+			System.out.println("Массив переполнен");
+		}
+		
 
 		System.out.println(stack.toString());
 
-		String ret = stack.pop();
-		/*String ret2 = stack.pop();
-		String ret3 = stack.pop();
-		String ret4 = stack.pop();*/
+		try {
+			String name = stack.pop();
+			String name2 = stack.pop();
+			String name3 = stack.pop();
+			String name4 = stack.pop();
+			String name5 = stack.pop();
+		} catch(IndexOutOfBoundsException exc) {
+			System.out.println("Выход за пределы массива");
+		}
 
+		stack.push("sveta");
+		
 		System.out.println(stack.toString());
 	}
 }

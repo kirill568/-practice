@@ -1,4 +1,3 @@
-
 class User {
 	private String fullName;
 	private String login;
@@ -26,7 +25,7 @@ class User {
 		fullName = str;
 	}
 
-	public void showName() {
+	public void getName() {
 		System.out.println(fullName);
 	}
 
@@ -35,7 +34,7 @@ class User {
 		login = str;
 	}
 
-	public void showLogin() {
+	public void getLogin() {
 		System.out.println(login);
 	}
 
@@ -44,7 +43,7 @@ class User {
 		password = str;
 	}
 
-	public void showPassword() {
+	public void getPassword() {
 		System.out.println(password);
 	}
 
@@ -53,7 +52,7 @@ class User {
 		group = str;
 	}
 
-	public void showGroup() {
+	public void getGroup() {
 		System.out.println(group);
 	}
 
@@ -62,7 +61,7 @@ class User {
 		age = str;
 	}
 
-	public void showAge() {
+	public void getAge() {
 		System.out.println(age);
 	}
 }
@@ -79,19 +78,19 @@ class App {
 		int age = 18;
 
 		user.setName(name);
-		user.showName();
+		user.getName();
 
 		user.setLogin(login);
-		user.showLogin();
+		user.getLogin();
 
 		user.setPassword(password);
-		user.showPassword();
+		user.getPassword();
 
 		user.setGroup(group);
-		user.showGroup();
+		user.getGroup();
 
 		user.setAge(age);
-		user.showAge();
+		user.getAge();
 
 		user.showInfo(name);
 		user.showInfo(login, age);

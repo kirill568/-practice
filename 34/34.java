@@ -13,6 +13,10 @@ class Truck {
 
 	}
 
+	public String toString() {
+		return "Текущий вес:" + this.currentWeight + "\n" + "Максимальный вес: " + this.maxWeight;
+	}
+
 	public void setCurrentWeight(int num) {
 		this.currentWeight = num;
 	}
@@ -39,7 +43,9 @@ class Truck {
 class App {
 	public static void main(String[] args) {
 		Truck truck = new Truck(5000, 25000);
-
+		truck.incWeight(23000);
+		System.out.println(truck.toString());
 		truck.incWeight(10000);
+		System.out.println(truck.toString());
 	}
 }

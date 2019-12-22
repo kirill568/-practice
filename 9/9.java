@@ -27,9 +27,9 @@ class App {
 		cover2.height = in.nextInt();
 
 		if (cover1.getPerimeter() < cover2.getPerimeter()) {
-			System.out.println("первый коверт можно вложить во второй");
+			System.out.println("первый конверт можно вложить во второй");
 		} else if (cover2.getPerimeter() < cover1.getPerimeter()) {
-			System.out.println("второй коверт можно вложить во первый");
+			System.out.println("второй конверт можно вложить в первый");
 		} else {
 			System.out.println("конверты одинаковы");
 		}

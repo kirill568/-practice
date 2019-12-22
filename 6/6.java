@@ -3,16 +3,16 @@ import java.util.Scanner;
 class App {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		System.out.print("Ввелите 1 число: ");
-		int numberOne = in.nextInt();
+		System.out.print("Введите 1 число: ");
+		double numberOne = in.nextDouble();
 
-		System.out.print("Ввелите 2 число: ");
-		int numberTwo = in.nextInt();
+		System.out.print("Введите 2 число: ");
+		double numberTwo = in.nextDouble();
 
-		System.out.print("Ввелите 3 число: ");
-		int numberThree = in.nextInt();
+		System.out.print("Введите 3 число: ");
+		double numberThree = in.nextDouble();
 
-		float sr = ( (float)numberOne + (float) numberTwo + (float) numberThree) / 3;
+		double sr = (numberOne + numberTwo + numberThree) / 3;
 
 		System.out.print("Среднее арифметическое: " + sr);
 	}

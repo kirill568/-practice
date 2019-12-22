@@ -3,22 +3,22 @@ import java.util.*;
 
 class App {
 	public static void main(String[] args) {
-		Map<Integer, String> hashMap = new HashMap<Integer, String>();
+		Map<String, Integer> hashMap = new HashMap<String, Integer>();
 
 		Scanner in = new Scanner(System.in);
 		System.out.print("Введите предложение: ");
 		String sentence = in.nextLine();
 		String[] words = sentence.split(" ");
 
-		hashMap = convertToHashMap(words, hashMap);
-
-		System.out.println("Слов в предложении: " + hashMap.size());
-	}
-
-	public static Map convertToHashMap(String[] array, Map hashMap) {
-		for (int i = 0; i < array.length; i += 1) {
-			hashMap.put(i, array[i]);	
+		for (int i = 0; i < words.length; i+=1) {
+			if (hashMap.containsKey(words[i])) {
+				int pre = hashMap.get(words[i]);
+				hashMap.put(words[i], pre+1);
+			} else {
+				hashMap.put(words[i], 1);
+			}
 		}
-		return hashMap;
+
+		System.out.println(hashMap.entrySet());
 	}
 }

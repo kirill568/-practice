@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-
-
 class Car {
 	private int currentSpeed;
 	private int maxSpeed;
@@ -41,8 +38,6 @@ class Car {
 		}
 	}
 }
-
-
 class App {
 	public static void main(String[] args) {
 		Car car = new Car(180);

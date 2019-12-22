@@ -3,7 +3,7 @@ import java.util.Scanner;
 class App {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		System.out.print("Ввелите число: ");
+		System.out.print("Введите число: ");
 		double inputNumber = in.nextDouble();
 		char[] array = String.valueOf(inputNumber).toCharArray();
 

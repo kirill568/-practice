@@ -27,6 +27,14 @@ class Car {
 			currentSpeed = num;
 		}
 	}
+
+	public void getMaxSpeed() {
+		System.out.println("Масимальная скорость: " + this.maxSpeed);
+	}
+
+	public void getCurrentSpeed() {
+		System.out.println("Текущая скорость: " + this.currentSpeed);
+	}
 }
 
 
@@ -36,5 +44,8 @@ class App {
 
 		car.setMaxSpeed(-35);
 		car.setCurrentSpeed(200);
+
+		car.getMaxSpeed();
+		car.getCurrentSpeed();
 	}
 }

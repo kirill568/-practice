@@ -4,24 +4,24 @@ class App {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.print("Введите длину верхнего основания: ");
-		int a = in.nextInt();
+		double a = in.nextDouble();
 
 		System.out.print("Введите длину нижнего основания: ");
-		int b = in.nextInt();
+		double b = in.nextDouble();
 
 		System.out.print("Введите длину левой боковой стороны: ");
-		int c= in.nextInt();
+		double c= in.nextDouble();
 
 		System.out.print("Введите длину правой боковой стороны: ");
-		int d = in.nextInt();
+		double d = in.nextDouble();
 
-		float onePart = ((float) a + (float) b) / 2;
-        float twoPart = square((square((float)b - (float)a) + (float)square(c) - (float)square(d)) / (2 * ((float)b - (float)a)));
-        float square = onePart * (float)Math.sqrt((double)square(c) - (double)twoPart);
+		double onePart = ( a + b) / 2;
+        double twoPart = square((square(b - a) + square(c) - square(d)) / (2 * (b - a)));
+        double square = onePart * Math.sqrt(square(c) - twoPart);
         System.out.print("Площадь: " + square);
 	}
 
-	public static float square(float number) {
+	public static double square(double number) {
 		return number * number;
 	}
 }
