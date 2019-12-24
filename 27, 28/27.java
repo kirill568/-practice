@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 
 class Calc {
 	public static double sum(double num1, double num2) {
@@ -21,10 +23,16 @@ class Calc {
 class App {
 	public static void main(String[] args) {
 		Calc calc = new Calc();
+		Scanner in = new Scanner(System.in);
+		System.out.print("Введит первое число: ");
+		double firstNumber = in.nextDouble();
 
-		System.out.println("25 + 5 = " + calc.sum(25, 5));
-		System.out.println("25 - 5 = " + calc.diff(25, 5));
-		System.out.println("25 / 5 = " + calc.div(25, 5));
-		System.out.println("25 * 5 = " + calc.multi(25, 5));
+		System.out.print("Введит второе число: ");
+		double secondeNumber = in.nextDouble();
+
+		System.out.println(firstNumber + "+" + secondeNumber + calc.sum(firstNumber, secondeNumber));
+		System.out.println(firstNumber + "-" + secondeNumber + calc.diff(firstNumber, secondeNumber));
+		System.out.println(firstNumber + "/" + secondeNumber + calc.div(firstNumber, secondeNumber));
+		System.out.println(firstNumber + "*" + secondeNumber + calc.multi(firstNumber, secondeNumber));
 	}
 }
