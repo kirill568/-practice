@@ -30,9 +30,9 @@ class App {
 		System.out.print("Введит второе число: ");
 		double secondeNumber = in.nextDouble();
 
-		System.out.println(firstNumber + "+" + secondeNumber + calc.sum(firstNumber, secondeNumber));
-		System.out.println(firstNumber + "-" + secondeNumber + calc.diff(firstNumber, secondeNumber));
-		System.out.println(firstNumber + "/" + secondeNumber + calc.div(firstNumber, secondeNumber));
-		System.out.println(firstNumber + "*" + secondeNumber + calc.multi(firstNumber, secondeNumber));
+		System.out.println(firstNumber + " + " + secondeNumber + " = " + calc.sum(firstNumber, secondeNumber));
+		System.out.println(firstNumber + " - " + secondeNumber + " = " + calc.diff(firstNumber, secondeNumber));
+		System.out.println(firstNumber + " / " + secondeNumber + " = " + calc.div(firstNumber, secondeNumber));
+		System.out.println(firstNumber + " * " + secondeNumber + " = " + calc.multi(firstNumber, secondeNumber));
 	}
 }
